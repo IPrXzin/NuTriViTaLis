@@ -11,7 +11,7 @@ var _alimentos = choose(obj_batata,
 	obj_tomate
 	)
 
-var _y = random_range(400, 650)
+var _y = random_range(400, 650)	
 
 instance_create_layer(-50, _y, "Instances", _alimentos)
 

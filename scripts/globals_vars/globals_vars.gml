@@ -1,10 +1,8 @@
 
+global.linhas_y = [200,360,520]
+
+
 global.objeto_sendo_arrastado = noone;
 
 
 
-
-enum e_alimentos {
-	obj_alface,
-	obj_alho
-}

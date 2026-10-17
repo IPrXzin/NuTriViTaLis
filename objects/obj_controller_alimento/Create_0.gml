@@ -5,6 +5,18 @@ offset_y = 0;
 
 msg = ""
 
-hspeed = 1.65
+spd = 1.75
 
+hspeed = spd
+
+
+switch (room){
+	
+	case rm_fase_1:
+		hspeed = spd
+		break
+	case rm_fase_2:
+		hspeed = -spd
+		break 
+}
 

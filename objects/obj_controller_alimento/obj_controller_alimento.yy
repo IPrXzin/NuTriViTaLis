@@ -10,8 +10,8 @@
   "name":"obj_controller_alimento",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Fase1",
+    "path":"folders/Objects/Fase1.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_enums",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_enums",
+  "parent":{
+    "name":"Nutrivitalis",
+    "path":"Nutrivitalis.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -8,8 +8,8 @@
   "name":"obj_portal_legume_verdura",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Fase1",
+    "path":"folders/Objects/Fase1.yy",
   },
   "parentObjectId":{
     "name":"obj_portal_pai",
