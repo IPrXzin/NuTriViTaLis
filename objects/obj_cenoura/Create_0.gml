@@ -1,3 +1,3 @@
 event_inherited();
 
-tipo = "legume/verdura"
+tipo = tipoAlimento.legume_verdura
