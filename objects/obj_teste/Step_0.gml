@@ -1,8 +1,5 @@
-// Step event do obj_teste
 if (keyboard_check_pressed(vk_space)) {
-    if (room == rm_fase_1) {
-        room_goto(rm_fase_2);
-    } else {
-        room_goto(rm_fase_1);
-    }
+    var _prox = room_next(room);   // devolve -1 se não houver próxima
+    if (_prox != -1) room_goto(_prox);
+    else room_goto(rm_fase_1);
 }

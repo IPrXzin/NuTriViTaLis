@@ -1,0 +1,3 @@
+arrumar os alimentos permanecerem na bandeja
+
+ajustar o botao de servir da fase 3
