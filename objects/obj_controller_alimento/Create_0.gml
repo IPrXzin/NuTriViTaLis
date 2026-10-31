@@ -9,7 +9,7 @@ spd = 1.75;
 x_origem = x;
 y_origem = y;
 voltando = false;
-copia = false;   // true só para comidas criadas pela bandeja
+reposto = false;   // já criou a reposição na bandeja?   // true só para comidas criadas pela bandeja
 
 switch (room) {
     case rm_fase_1:

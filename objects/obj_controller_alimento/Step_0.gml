@@ -7,7 +7,10 @@ if (voltando) {
         x = x_origem;
         y = y_origem;
         voltando = false;
-        if (copia) {
+
+        // só some se já houver uma igual esperando na bandeja
+        // (acontece com comida que já esteve no prato)
+        if (reposto) {
             instance_destroy();
             exit;
         }
@@ -22,7 +25,7 @@ if (mouse_check_button_pressed(mb_left) && global.objeto_sendo_arrastado == noon
         offset_y = y - mouse_y;
         hspeed = 0;
 
-        // se já estava no prato, tira da lista enquanto é arrastada
+        // se já estava no prato, tira da lista
         if (room == rm_fase_3) {
             var _pos = array_get_index(obj_prato.itens, id);
             if (_pos != -1) array_delete(obj_prato.itens, _pos, 1);
@@ -40,9 +43,21 @@ if (global.objeto_sendo_arrastado == id) {
             var _grupo = grupo_do_alimento(tipo);
 
             if (_dist <= obj_prato.raio && _grupo != -1 && zona_do_prato(x, y) == _grupo) {
-                array_push(obj_prato.itens, id);   // fica no prato
+                // fica no prato
+                array_push(obj_prato.itens, id);
+
+                // primeira vez no prato: repõe uma nova comida na bandeja
+                if (!reposto) {
+                    reposto = true;
+                    instance_create_depth(x_origem, y_origem, depth, object_index);
+                }
+            } else if (position_meeting(x, y, obj_bandeja)) {
+                // soltou dentro da bandeja: fica onde foi solto
+                x_origem = x;
+                y_origem = y;
             } else {
-                voltando = true;                   // volta para a bandeja
+                // soltou fora da bandeja e do prato: volta para a bandeja
+                voltando = true;
             }
         } else {
             var _portal = instance_place(x, y, obj_portal_pai);
