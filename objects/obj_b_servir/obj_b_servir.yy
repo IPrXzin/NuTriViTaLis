@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite17",
-    "path":"sprites/Sprite17/Sprite17.yy",
+    "name":"spr_botao",
+    "path":"sprites/spr_botao/spr_botao.yy",
   },
   "spriteMaskId":null,
   "visible":true,

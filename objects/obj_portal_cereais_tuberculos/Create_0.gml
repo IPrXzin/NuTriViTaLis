@@ -1,3 +1,3 @@
 event_inherited()
 
-tipo = "cereais/tuberculos"
+tipo = tipoAlimento.cereais_tuberculos
