@@ -1,0 +1,1 @@
+vidas = vidas_max

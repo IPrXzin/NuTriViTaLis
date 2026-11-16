@@ -1,3 +1,5 @@
+// obj_controller_alimento, Step Event
+
 // VOLTAR PARA A BANDEJA
 if (voltando) {
     x = lerp(x, x_origem, 0.25);
@@ -23,6 +25,7 @@ if (mouse_check_button_pressed(mb_left) && global.objeto_sendo_arrastado == noon
         global.objeto_sendo_arrastado = id;
         offset_x = x - mouse_x;
         offset_y = y - mouse_y;
+        hspeed_original = hspeed;   // guarda a velocidade pra devolver depois
         hspeed = 0;
 
         // se já estava no prato, tira da lista
@@ -61,14 +64,21 @@ if (global.objeto_sendo_arrastado == id) {
             }
         } else {
             var _portal = instance_place(x, y, obj_portal_pai);
+
             if (_portal != noone) {
                 if (_portal.tipo == tipo) {
-                    show_debug_message("certo");
-                    msg = "certo";
+                    // portal certo: o alimento some
+                    instance_destroy();
+                    exit;
                 } else {
-                    show_debug_message("errado");
-                    msg = "errado";
+                    // portal errado (ou lixo em qualquer portal): -1 de vida
+                    jogador_perde_vida();
+                    instance_destroy();
+                    exit;
                 }
+            } else {
+                // soltou fora de qualquer portal: volta a andar, sem penalidade
+                hspeed = hspeed_original;
             }
         }
     } else {

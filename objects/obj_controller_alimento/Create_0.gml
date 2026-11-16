@@ -2,7 +2,6 @@ tipo = noone;
 sendo_arrastado = false;
 offset_x = 0;
 offset_y = 0;
-msg = "";
 spd = 1.75;
 
 // para voltar à bandeja
