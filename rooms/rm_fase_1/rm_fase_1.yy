@@ -38,8 +38,8 @@
   ],
   "name":"rm_fase_1",
   "parent":{
-    "name":"Nutrivitalis",
-    "path":"Nutrivitalis.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

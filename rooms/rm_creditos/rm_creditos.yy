@@ -13,8 +13,8 @@
   ],
   "name":"rm_creditos",
   "parent":{
-    "name":"Nutrivitalis",
-    "path":"Nutrivitalis.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

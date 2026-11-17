@@ -21,8 +21,8 @@
   ],
   "name":"rm_colecao",
   "parent":{
-    "name":"Nutrivitalis",
-    "path":"Nutrivitalis.yyp",
+    "name":"Rooms",
+    "path":"folders/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
