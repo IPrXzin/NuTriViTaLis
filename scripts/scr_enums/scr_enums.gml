@@ -3,7 +3,9 @@ enum tipoAlimento {
     fruta,
     legume_verdura,
     cereais_tuberculos,
-    leguminosa          // feijão, lentilha, grão-de-bico
+    leguminosa,// feijão, lentilha, grão-de-bico
+	outros,
+	laticinios
 }
 
 enum GRUPO_PRATO {
