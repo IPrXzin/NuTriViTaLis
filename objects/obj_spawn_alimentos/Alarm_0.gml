@@ -14,7 +14,7 @@ var _alimentos = choose(obj_batata,
 	obj_ovo,
 	obj_pimentaoV,
 	obj_refrigerante,
-	obj_queijo
+	obj_queijo 
 	)
 
 var _y = random_range(400, 650)	

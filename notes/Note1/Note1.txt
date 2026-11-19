@@ -1,3 +1,18 @@
-arrumar os alimentos permanecerem na bandeja
 
-ajustar o botao de servir da fase 3
+
+compras:
+
+(imagem do obj)	batata
+(imagem do obj)	bife
+(imagem do obj)	batata frita
+(imagem do obj)	alface
+(imagem do obj)	alho
+	
+
+	
+
+
+
+
+
+

@@ -46,6 +46,7 @@
     {"id":{"name":"obj_controller_alimento","path":"objects/obj_controller_alimento/obj_controller_alimento.yy",},},
     {"id":{"name":"obj_fase2","path":"objects/obj_fase2/obj_fase2.yy",},},
     {"id":{"name":"obj_laranja","path":"objects/obj_laranja/obj_laranja.yy",},},
+    {"id":{"name":"obj_lista_compras","path":"objects/obj_lista_compras/obj_lista_compras.yy",},},
     {"id":{"name":"obj_morango","path":"objects/obj_morango/obj_morango.yy",},},
     {"id":{"name":"obj_ovo","path":"objects/obj_ovo/obj_ovo.yy",},},
     {"id":{"name":"obj_pimentaoV","path":"objects/obj_pimentaoV/obj_pimentaoV.yy",},},

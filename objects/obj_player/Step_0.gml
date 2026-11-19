@@ -1,5 +1,3 @@
-
-
 if (keyboard_check_pressed(ord("W"))){
 	linha_atual = max(0, linha_atual -1)
 }
